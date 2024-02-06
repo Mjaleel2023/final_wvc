@@ -1,0 +1,40 @@
+.progressBar-sec {
+
+    .progressBar {
+        margin-top: 50px;
+.valueFirst,.valueMiddle
+{
+width:33%;
+}
+        .valueMiddle span {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .valueSecond span {
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .progress_container {
+            margin-top: 12px;
+
+            .donate-progressBar {
+                margin-top: 20px;
+                width: 100%;
+                background-color: #EAEBEE;
+                height: 12px;
+                border-radius: 16px;
+                position: relative;
+            }
+
+            .liveDonation-range {
+                position: absolute;
+                background-color: #E86100;
+                height: 12px;
+                border-radius: 16px;
+            }
+
+        }
+    }
+}

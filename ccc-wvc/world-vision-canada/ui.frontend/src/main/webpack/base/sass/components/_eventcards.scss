@@ -1,0 +1,74 @@
+$bgPrimaryColor: #1049A9;
+$bgSecondaryColor: #EAEBEE;
+$bgBrandPrimary: #E86100;
+$PrimaryColor: #17191F;
+$SecondaryColor: #65676B;
+$errorColor: #D30519;
+
+.calendar-section {
+    margin: 45px 0;
+
+    .calendar_card_container {
+        margin-bottom: 25px;
+        flex-direction: row;
+        margin-top: 15px;
+        padding-bottom: 15px;
+
+        .calendar_card {
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
+            border-radius: 12px;
+            min-width: 230px;
+            position: relative;
+
+            .card_banner {
+                position: relative;
+                background-color: #fff;
+
+                img {
+                    max-width: 100%;
+                    border-radius: 12px 12px 0 0;
+                }
+            }
+
+            .card_content {
+                padding: 16px;
+                min-height: 190px;
+                background-color: #fff;
+                border-radius: 0px 0px 12px 12px;
+
+                h3 {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: $SecondaryColor;
+                    margin-top: 12px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            span {
+                background-color: #F4F5F7;
+                border-radius: 99px;
+                color: $PrimaryColor;
+                padding: 7px 12px 7px 10px;
+                border: 0;
+                font-size: 14px;
+                position: absolute;
+                bottom: 16px;
+                left: 16px;
+            }
+        }
+    }
+}
+ul {
+    display: flex;
+    gap: 10px;
+    margin-left: -3rem;
+}
+@media only screen and (max-width: 998px) {
+    ul {
+        overflow-x: scroll;
+    }
+  }

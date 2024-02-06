@@ -1,0 +1,25 @@
+<sly data-sly-use.donarList="com.Worldvision.core.models.DonarListComponentModel"/>
+<section class="donor-section padding">
+    <h2>${donarList.title @ context='html'}</h2>
+    <div class="donor_container">
+        <sly data-sly-list="${donarList.donarsDataList}">
+            <div class="donor_card">
+                <div class="d-flex justify-content-spacebetween">
+                    <div class="donot-who">
+                        <h3>${item.donarName}</h3>
+                        <div class="d-flex">
+                            <span>${item.paidDate}</span>
+                            <span>${item.activityName}</span>
+                        </div>
+                        <div class="d-flex replay_btn">
+                            <button>${donarList.text}</button>
+                        </div>
+                    </div>
+                    <div class="donot-am">
+                        <h2>$ ${item.donorAmount}</h2>
+                    </div>
+                </div>
+            </div>
+        </sly>
+    </div>
+</section>

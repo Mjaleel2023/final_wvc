@@ -1,0 +1,13 @@
+
+    
+    <sly data-sly-use.Model="com.Worldvision.core.models.BannerComponentModel"/>
+<section class="cover-banner-sec">
+        <img src="${Model.image}" alt="banner">
+        <div class="main_content padding">
+            <h6>${'MMMM dd -' @ format=Model.startdate } ${'dd , yyyy' @ format=Model.enddate }</h6>
+            <h1>${Model.title @ context='html'}</h1>
+            <p>${Model.description @ context='html'}</p>
+        </div>
+    </section>
+    <div class="padding"><sly data-sly-resource="${'btn' @resourceType='/apps/Worldvision/components/button'}"/></div>
+    <div class="padding"><sly data-sly-resource="${'Donation' @resourceType='/apps/Worldvision/components/livedonation'}"/></div>

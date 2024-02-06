@@ -1,0 +1,29 @@
+<sly data-sly-use.Model="com.Worldvision.core.models.BannerComponentModel"/>
+<sly data-sly-use.liveDonation="com.Worldvision.core.models.LiveDonationModel">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+<section class="progressBar-sec">
+        <div class="progressBar">
+            <div class="d-flex justify-content-spacebetween">
+                <div class="valueFirst">
+                
+                    <span class="d-flex"><img src="${liveDonation.image}" /> <span id="NoOfDonors"></span></span>
+                </div>
+                <div class="valueMiddle">
+                    <span id="fundraiserKValue"></span>
+                </div>
+               
+                 <div class="valueSecond">
+                        <span>Goal: $ <span id="goalValue">${liveDonation.goal}</span></span>
+                    </div>
+                
+            </div>
+            <div class="progress_container">
+                    <div class="donate-progressBar">
+                        <div class="liveDonation-range"></div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    

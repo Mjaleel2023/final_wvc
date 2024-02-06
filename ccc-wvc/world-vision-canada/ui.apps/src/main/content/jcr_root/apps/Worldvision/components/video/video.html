@@ -1,0 +1,26 @@
+<sly data-sly-use.htl="com.Worldvision.core.models.VideoComponentModel"/>
+ <section class="video-section padding">
+        <div class="video_content">
+        </div>
+        <div class="video_bg d-flex justify-content-center" style="background-image: url(${htl.image @context='styleString'});">
+            <div class="background_shadow"></div>
+            <div class="play_btn">
+                <button id="openModalBtn">
+                    <img src="/content/dam/Worldvision/MediaPlayBtn.svg" />
+                </button>
+            </div>
+            <!-- Modal Structure -->
+            <div id="myModal" class="videoModal">
+                <div class="videoModal-content">
+                    <span class="videoModal-close">
+                        <img src="/content/dam/Worldvision/close-icon.svg" />
+                    </span>
+                    <iframe width="100%" height="100%"
+                        src="${htl.videourl}" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>

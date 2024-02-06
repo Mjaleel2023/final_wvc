@@ -1,0 +1,81 @@
+$bgPrimaryColor: #1049A9;
+$bgSecondaryColor: #EAEBEE;
+$bgBrandPrimary: #E86100;
+$PrimaryColor: #17191F;
+$SecondaryColor: #65676B;
+$errorColor: #D30519;
+
+.donor-section {
+    padding-bottom: 24px;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .donot_card_seeMore {
+        padding-top: 24px;
+
+        a {
+            color: #1049A9;
+            font-size: 16px;
+        }
+    }
+
+
+    .donor_container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .donor_card {
+            border-bottom: 1px solid #B6B7BA;
+            border-radius: 12px;
+            padding: 16px;
+            background: #FFF;
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
+
+            .justify-content-spacebetween {
+                align-items: flex-start;
+            }
+
+            .donot-who {
+                h3 {
+                    font-size: 18px;
+                    margin-bottom: 12px;
+                }
+
+                span {
+                    color: $SecondaryColor;
+                    font-size: 16px;
+                }
+
+                .d-flex {
+                    gap: 17px;
+                }
+
+                .replay_btn {
+                    margin-top: 24px;
+                    button {
+                        font-family: "Hanken Grotesk", sans-serif;
+                        background-color: #F4F5F7;
+                        border-radius: 99px;
+                        color: $PrimaryColor;
+                        padding: 8px 12px;
+                        border: 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .donot-am {
+                h2 {
+                    color: $bgPrimaryColor;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

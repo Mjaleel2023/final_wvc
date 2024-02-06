@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:primaryType="sling:OrderedFolder">
+    <jcr:content
+        cq:conf="/conf/Worldvision"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Worldvision">
+        <folderThumbnail/>
+    </jcr:content>
+    <AccreditedMember.svg/>
+    <Arrow_Right.svg/>
+    <bbb.svg/>
+    <close-icon.svg/>
+    <F_Social_Facebook.svg/>
+    <F_Social_Instagram.svg/>
+    <F_Social_Twitter.svg/>
+    <F_Social_Youtube.svg/>
+    <favicon.ico/>
+    <hc.svg/>
+    <home-banner.png/>
+    <ImagineCanada.svg/>
+    <LevelAccessLogo.svg/>
+    <LevelAccessLogoWhite.svg/>
+    <MediaPlayBtn.svg/>
+    <menu-icon.svg/>
+    <rightArrow.svg/>
+    <user.svg/>
+    <videoBgBanner.png/>
+    <wv-brand.png/>
+    <wv-brand.svg/>
+    <asset.jpg/>
+    <slide1.png/>
+</jcr:root>

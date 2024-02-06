@@ -1,0 +1,42 @@
+<sly data-sly-use.model="com.Worldvision.core.models.Header"/>
+<sly data-sly-use.multifield="com.Worldvision.core.models.NavMultiSectionIterator"/>
+
+
+
+<!-- header -->
+<nav class="navbar navbar-bg d-flex justify-content-spacebetween padding">
+    <div class="navbar-brand">
+        <a class="navbar-brand-logo d-flex" href="${model.logourl}" target="${properties.newwindow ? '_blank' : '_self'} @ context='string' ">
+            <img alt="${model.logoalt}" src="${model.logo}" />
+        </a>
+    </div>
+    <div class="navbar-nav">
+        <div><sly data-sly-resource="${'btn' @resourceType='/apps/Worldvision/components/button'}"/></div>
+        <div id="menuButton" class="d-flex">
+            <img alt="burger menu" src="/content/dam/Worldvision/menu-icon.svg" />
+        </div>
+        <div id="menuModal">
+            <div class="navbar-nav-link">
+                <div class="d-flex justify-content-spacebetween">
+                    <div class="navbar-brand">
+                        <a class="navbar-brand-logo" href="${model.logourl}" target="${properties.newwindow ? '_blank' : '_self'} @ context='string' ">
+                            <img alt="${model.logoalt}" src="${model.logo}" />
+                        </a>
+                    </div>
+                    <div class="close-menu" id="menuCloseButton">
+                        <img alt="world vision" src="/content/dam/Worldvision/close-icon.svg" />
+                    </div>
+                </div>
+                <div class="navbar-nav-links padding">
+                    <ul data-sly-list="${multifield.multifields}">
+                        <li class="nav-item" style="white-space: nowrap;">
+                            <a class="nav-link" href="${item.ctaurl}" target="${properties.newwindow ? '_blank' : '_self'} @ context='string' " >${item.title}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+

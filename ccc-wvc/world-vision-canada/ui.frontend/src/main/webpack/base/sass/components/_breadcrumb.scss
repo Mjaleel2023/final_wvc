@@ -1,0 +1,50 @@
+$bgPrimaryColor: #1049A9;
+$bgSecondaryColor: #EAEBEE;
+$bgBrandPrimary: #E86100;
+$PrimaryColor: #17191F;
+$SecondaryColor: #65676B;
+$errorColor: #D30519;
+
+.cover-banner-sec {
+    margin-top: 64px;
+
+    img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .main_content {
+        margin-top: 24px;
+
+        h6 {
+            color: $SecondaryColor;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            color: $PrimaryColor;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 36px;
+            margin: 7px 0;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        .btn_Primary {
+            margin-top: 28px;
+        }
+    }
+}
+
+.cmp-breadcrumb {}
+.cmp-breadcrumb__list {}
+.cmp-breadcrumb__item {}
+.cmp-breadcrumb__item--active {}
+.cmp-breadcrumb__item-link {}

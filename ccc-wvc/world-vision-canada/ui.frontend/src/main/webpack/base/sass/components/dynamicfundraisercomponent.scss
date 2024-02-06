@@ -1,0 +1,61 @@
+$bgPrimaryColor: #1049A9;
+$bgSecondaryColor: #EAEBEE;
+$bgBrandPrimary: #E86100;
+$PrimaryColor: #17191F;
+$SecondaryColor: #65676B;
+$errorColor: #D30519;
+
+.week-goal {
+    margin-top: 16px;
+
+    .week-goal-card {
+        padding: 20px 16px;
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
+        border-radius: 16px;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 18px;
+
+        span {
+            font-size: 16px;
+            color: #65676B;
+            text-align: center;
+        }
+
+        .weekProgressBar {
+            margin: 20px 0;
+            text-align: center;
+            width: 100%;
+
+            p {
+                margin-top: 10px;
+            }
+
+            .donate-progressBar {
+                width: 100%;
+                background-color: #EAEBEE;
+                height: 12px;
+                border-radius: 16px;
+                position: relative;
+
+                .liveDonation-range {
+                    position: absolute;
+                    background-color: #00ACCA;
+                    width: 70%;
+                    height: 12px;
+                    border-radius: 16px;
+                }
+            }
+        }
+    }
+}
+#fundraiserKValue {
+    color: #17191f;
+    font-size: 21px;
+}
+#percentage {
+    color: #17191f;
+}

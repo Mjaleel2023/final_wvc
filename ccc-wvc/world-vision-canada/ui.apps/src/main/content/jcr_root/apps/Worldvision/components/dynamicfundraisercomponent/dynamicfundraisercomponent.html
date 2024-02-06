@@ -1,0 +1,21 @@
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<sly data-sly-use.Model="com.Worldvision.core.models.DynamicFundRaiserComponent"/>
+<section class="week-goal padding">
+    <div class="week-goal-card" data-maximum-funds="${Model.Maximumfunds}">
+        <h2>${Model.title @ context='html'}</h2>
+        <div class="d-flex justify-content-center">
+            <img src="${Model.image}" alt="icon" />
+            <h2><span id="fundraiserKValue"></span>/$${Model.Maximumfunds}</h2>
+            <span>${Model.description @ context='html'}</span>
+            <div class="weekProgressBar">
+                <div class="donate-progressBar">
+                    <div class="liveDonation-range"></div>
+                </div>
+                <p><b><span id="percentage"></span></b> complete</p>
+            </div>
+        </div>
+        <div>
+            <sly data-sly-resource="${'btn' @resourceType='/apps/Worldvision/components/button'}"/>
+        </div>
+    </div>
+</section>

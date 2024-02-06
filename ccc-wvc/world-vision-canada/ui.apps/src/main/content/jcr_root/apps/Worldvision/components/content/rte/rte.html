@@ -1,0 +1,11 @@
+<sly data-sly-use.model="com.Worldvision.core.models.RteComponentModel" />
+
+
+<section class="content-sec">
+    <div class="content padding">
+        <sly data-sly-resource="${'component-ID' @ resourceType='/apps/Worldvision/components/content/title'}"></sly>
+        <div class="min-divider"></div>
+        <p>${model.text @ context='html'}</p>
+        <a href="${Properties.ctaurl}" target="${properties.newwindow ? '_blank' : '_self' } @ context='string' " >${properties.title}</a>
+    </div>
+</section>

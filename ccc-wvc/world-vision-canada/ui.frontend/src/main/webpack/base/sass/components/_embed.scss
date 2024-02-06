@@ -1,0 +1,19 @@
+@use '_variables';
+
+.embed {
+  .wvideo-player {
+    margin-top: 0;
+    .wvc-wvideo-player__overlay-bg {
+      background-size: cover;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .wvideo-player__overlay:focus .wvideo-player__play {
+      box-shadow: unset;
+    }
+  }
+}

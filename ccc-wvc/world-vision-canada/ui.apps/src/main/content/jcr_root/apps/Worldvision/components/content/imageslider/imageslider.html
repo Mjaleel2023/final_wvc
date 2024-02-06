@@ -1,0 +1,17 @@
+<sly data-sly-use.multifield="com.Worldvision.core.models.ImgMultiSectionIterator"/>
+
+<section class="imageSlider-sec">
+        <div id="wrap-sh-slider">
+            <div class="sh-slider">
+            
+                <ul data-sly-list="${multifield.multifields}">
+                    <li>
+                        <img src="${item.image}" />
+                    </li>
+                    
+                </ul>
+                <div id="slide-number" class="slideNumber"><span id="slideNumber"></span></div>
+            </div>
+        </div>
+    </section>
+    

@@ -1,0 +1,17 @@
+.fundraiser-banner-sec {
+    position: relative;
+
+    .fundraiserBg {
+        width: 100%;
+    }
+
+    .main_content {
+        position: absolute;
+        bottom: 20px;
+        color: #fff;
+
+        p {
+            margin-top: 5px;
+        }
+    }
+}
